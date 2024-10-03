@@ -1,0 +1,100 @@
+body{ 
+    margin: 0;
+    padding: 0;
+   background-color: blanchedalmond;
+   }
+
+   .navbar{
+
+    background-color: aliceblue;
+    padding: 0px 20px;
+    width: 100%;
+
+    
+}
+
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li{
+    margin-right: 40px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:black;
+    transition:color 1s ease;
+
+}
+
+.nav-links li a:hover{
+    color:bisque;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200%;
+    margin:0 auto;
+    padding: 0 20px;
+}
+
+
+.logo{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+}
+
+.final{
+    background-color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+
+}
+
+.final .foot h2{
+    font-size: 15px;
+}
+
+.foot-content{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+flex:1 1 500%;
+gap: 20px;
+max-height:auto ;
+margin-bottom: 200px;
+
+}
+
+.form-elim{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.form-volver{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}

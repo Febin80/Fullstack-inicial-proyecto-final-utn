@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <link rel="stylesheet" href="/css/styleEdit.css">
+</head>
+<body>
+
+    <%- include('../partials/header') %>
+
+    <div class="form-edit">
+    <form action="/<%=producto.id%>?_method=PUT" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="marca">marca </label>
+            <input type="text" id="marca" name="marca" value="<%=producto.marca%>" required>
+        </div>
+        <br>
+        <div>
+            <label for="modelo">modelo </label>
+            <input type="text" id="modelo" name="modelo" value="<%=producto.modelo%>" required >
+        </div>
+        <br>
+        <div>
+            <label for="precio">precio </label>
+            <input type="number" id="precio" name="precio" value="<%=producto.precio%>" required >
+        </div>
+        <br>
+        <div>
+            <label for="imagen">Imagen: </label>
+            <input type="file" name="imagen" id="imagen" placeholder="Carga la imagen">
+            
+        </div>
+        <br>
+        <div>
+            <button type="submit" value="Crear">guardar </button>
+        </div>
+    </form>
+    <br>
+</div>
+    <%- include('../partials/footer') %>
+
+</body>
+</html>

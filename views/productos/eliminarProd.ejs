@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar</title>
+    <link rel="stylesheet" href="/css/styleElim.css">
+</head>
+<body>
+
+    <%- include('../partials/header') %>
+    
+    <div class="form-elim">
+    <p>esta segura eliminar <%= producto.marca %> <%= producto.modelo %>?</p>
+    <form action="/<%=producto.id%>?_method=DELETE" method="post">
+        <button type="submit">eliminar</button>
+    </form>
+    <br>
+</div>
+
+    <div class="form-volver">
+<a href="/">Volver</a>
+</div>
+<%- include('../partials/footer') %>
+
+
+</body>
+</html>
